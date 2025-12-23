@@ -1,6 +1,5 @@
 "use client";
 
-import { Divisor } from "@/components/Divisor";
 import { Footer } from "@/components/Footer";
 import { GastronomySection } from "@/components/GastronomySection";
 import { PromotionSection } from "@/components/PromotionSection";
@@ -12,15 +11,10 @@ export default function Home() {
   return (
     <main className="flex flex-col w-screen gap-8">
       <Navbar />
-      <Divisor />
       <SuiteSection />
-      <Divisor />
       <GastronomySection />
-      <Divisor />
       <SexShopSection />
-      <Divisor />
       <PromotionSection />
-      <Divisor />
       <Footer />
     </main>
   );

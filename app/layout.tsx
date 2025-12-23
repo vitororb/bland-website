@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Bland Motel - Mineiros, GO",
+  title: "Bland Motel",
 };
 
 export default function RootLayout({
