@@ -1,0 +1,20 @@
+{
+  "Luxo": {
+    "twoHours": "90",
+    "additionalHour": "25",
+    "overnight": "190",
+    "extraPersonSurcharge": "0.4"
+  },
+  "Premium": {
+    "twoHours": "120",
+    "additionalHour": "25",
+    "overnight": "220",
+    "extraPersonSurcharge": "0.4"
+  },
+  "Master": {
+    "twoHours": "130",
+    "additionalHour": "25",
+    "overnight": "230",
+    "extraPersonSurcharge": "0.4"
+  }
+}

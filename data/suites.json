@@ -1,0 +1,98 @@
+[
+  {
+    "id": "01",
+    "name": "Suíte 01",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-01/suite-01.jpeg"],
+    "isTrending": true
+  },
+  {
+    "id": "02",
+    "name": "Suíte 02",
+    "type": "Luxo",
+    "extras": [],
+    "images": ["/Suite-02/suite-02.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "03",
+    "name": "Suíte 03",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-03/suite-03.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "04",
+    "name": "Suíte 04",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-04/suite-04.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "05",
+    "name": "Suíte 05",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-05/suite-05.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "06",
+    "name": "Suíte 06",
+    "type": "Master",
+    "extras": ["Cadeira Erótica", "Pole Dance"],
+    "images": ["/Suite-06/suite-06.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "07",
+    "name": "Suíte 07",
+    "type": "Master",
+    "extras": ["Cadeira Erótica"],
+    "images": ["/Suite-07/suite-07.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "08",
+    "name": "Suíte 08",
+    "type": "Premium",
+    "extras": [],
+    "images": ["/Suite-08/suite-08.jpeg"],
+    "isTrending": true
+  },
+  {
+    "id": "09",
+    "name": "Suíte 09",
+    "type": "Premium",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-09/suite-09.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "10",
+    "name": "Suíte 10",
+    "type": "Premium",
+    "extras": [],
+    "images": ["/Suite-10/suite-10.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "11",
+    "name": "Suíte 11",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-11/suite-11.jpeg"],
+    "isTrending": false
+  },
+  {
+    "id": "12",
+    "name": "Suíte 12",
+    "type": "Luxo",
+    "extras": ["Poltrona"],
+    "images": ["/Suite-12/suite-12.jpeg"],
+    "isTrending": false
+  }
+]
