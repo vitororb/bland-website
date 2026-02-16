@@ -7,7 +7,7 @@ type Props = {
 
 export const PageLayout = ({ children }: Props) => {
   return (
-    <main className="flex flex-col w-screen">
+    <main className="flex w-screen flex-col">
       <Navbar />
       {children}
       <Footer />

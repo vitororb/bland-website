@@ -1,20 +1,39 @@
-import { LinkItem } from "./LinkItem";
+"use client";
+
+import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
+  const navItems = [
+    { id: "", label: "Início" },
+    { id: "suites", label: "Suítes" },
+    { id: "servicos", label: "Serviços" },
+    { id: "promocoes", label: "Promoções" },
+    { id: "sobre", label: "Sobre" },
+    { id: "contato", label: "Contato" },
+  ];
+
   return (
-    <header className="flex-flex-col w-screen bg-[url('/bg-lencol-vermelho.png')] bg-cover bg-center text-white">
-      <div className="flex justify-center items-center h-24">
-        <img src="/logo-2.png" alt="some description" className="w-24" />
+    <nav className="sticky top-0 z-50 flex h-20 w-screen items-center justify-between bg-white px-4 shadow-lg">
+      {/* Logo */}
+      <img src="/logos/logo-h.png" alt="Bland Motel" className="h-20 w-auto" />
+
+      {/* Menu */}
+      <div className="flex items-center gap-8">
+        {navItems.map((item) => (
+          <NavItem key={item.id} url={`/${item.id}`} text={item.label} />
+        ))}
       </div>
 
-      <nav className="flex gap-20 items-center justify-center h-14 backdrop-blur-xs">
-        <LinkItem text="início" url="/" />
-        <LinkItem text="sobre" url="/about" />
-        <LinkItem text="suítes" url="/suites" />
-        <LinkItem text="cardápio" url="/menu" />
-        <LinkItem text="sex shop" url="/sex-shop" />
-        <LinkItem text="promoções" url="/#promotions" />
-      </nav>
-    </header>
+      {/* Contact Button */}
+      <a
+        href="https://wa.me/5564999500479"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-primary hover:bg-secondary flex items-center rounded-lg px-4 py-2 text-white transition-colors"
+        title="WhatsApp"
+      >
+        Reserve
+      </a>
+    </nav>
   );
 };
