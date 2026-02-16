@@ -1,3 +1,4 @@
+import { PageLayout } from "@/components/shared/PageLayout";
 import type { Metadata } from "next";
 import { Cinzel, Montserrat } from "next/font/google";
 import "./globals.css";
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${cinzel.variable} ${montserrat.variable} antialiased`}>
-        {children}
+        <PageLayout>{children}</PageLayout>
       </body>
     </html>
   );
