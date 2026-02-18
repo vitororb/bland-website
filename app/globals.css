@@ -6,16 +6,19 @@
   --foreground: #171717;
 
   /* Paleta de cores personalizada */
-
-  /* Fontes */
-  --font-cinzel: "Cinzel", serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --primary: #e92025;
+  --secondary: #911d1d;
+  --accent: #e2716d;
 }
 
+/* Mapeamento para o Tailwind */
 @theme inline {
-  /* Mapeamento para o Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
 
   /* Fontes */
   --font-family-cinzel: var(--font-cinzel);
