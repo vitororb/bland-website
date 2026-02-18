@@ -3,23 +3,23 @@
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Divisor } from "@/components/shared/Divisor";
+import { PageBanner } from "@/components/shared/PageBanner";
 import { Section } from "@/components/shared/Section";
 import categories from "@/data/categories.json";
 import { Lock, Tv, Wifi, Wind } from "lucide-react";
 
 export default function Home() {
   return (
-    <div>
-      <div className="flex h-screen items-center bg-[url('/hero-banner.jpg')] bg-cover bg-center">
-        <Section
-          title="Pronto para uma Experiência Inesquecível?"
-          subtitle="Reserve agora sua suíte e desfrute de conforto, privacidade e luxo"
-        >
-          <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
-            Faça sua Reserva
-          </button>
-        </Section>
-      </div>
+    <>
+      <PageBanner
+        img="/hero-banner.jpg"
+        title="Pronto para uma Experiência Inesquecível?"
+        subtitle="Reserve agora sua suíte e desfrute de conforto, privacidade e luxo"
+      >
+        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
+          Faça sua Reserva
+        </button>
+      </PageBanner>
 
       <Section
         title="Seu refúgio de sofisticação!"
@@ -69,6 +69,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-    </div>
+    </>
   );
 }
