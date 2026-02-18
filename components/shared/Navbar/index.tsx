@@ -13,7 +13,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 flex h-20 w-screen items-center justify-between bg-white px-4 shadow-lg">
+    <nav className="fixed top-0 z-50 flex h-20 w-screen items-center justify-between bg-white px-4 shadow-lg">
       {/* Logo */}
       <img src="/logos/logo-h.png" alt="Bland Motel" className="h-20 w-auto" />
 
