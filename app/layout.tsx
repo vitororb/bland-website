@@ -1,4 +1,5 @@
-import { PageLayout } from "@/components/shared/PageLayout";
+import { Footer } from "@/components/shared/Footer";
+import { Navbar } from "@/components/shared/Navbar";
 import type { Metadata } from "next";
 import { Cinzel, Montserrat } from "next/font/google";
 import "./globals.css";
@@ -25,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${cinzel.variable} ${montserrat.variable} antialiased`}>
-        <PageLayout>{children}</PageLayout>
+        <main className="flex w-screen flex-col">
+          <Navbar />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );
