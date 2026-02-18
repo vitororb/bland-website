@@ -13,6 +13,7 @@ export default function Suites() {
       />
 
       <Section
+        id="luxo"
         title="Suítes Luxo"
         subtitle="Descubra nossas suítes de luxo, onde cada detalhe foi pensado para proporcionar uma experiência inesquecível. Com decoração sofisticada, amenidades exclusivas e um ambiente acolhedor, nossas suítes são o refúgio perfeito para momentos de relaxamento e romance."
       >
@@ -27,6 +28,7 @@ export default function Suites() {
       <Divisor />
 
       <Section
+        id="premium"
         title="Suítes Premium"
         subtitle="Suítes Premium são espaços luxuosos e bem equipados, com acabamentos de alta qualidade e amenidades exclusivas. Ideal para quem busca conforto e sofisticação em cada detalhe."
       >
@@ -36,6 +38,7 @@ export default function Suites() {
       <Divisor />
 
       <Section
+        id="master"
         title="Suítes Master"
         subtitle="Suítes Master são o auge do luxo e conforto, oferecendo espaços amplos, decoração elegante e uma variedade de amenidades exclusivas. Perfeitas para quem deseja uma experiência verdadeiramente inesquecível."
       >

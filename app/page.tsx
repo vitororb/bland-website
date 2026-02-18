@@ -64,7 +64,7 @@ export default function Home() {
               overnight={data.overnight}
               price={data.twoHours}
               description={data.description}
-              url="/suites"
+              url={`/suites#${name.toLowerCase()}`}
             />
           ))}
         </div>
