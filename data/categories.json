@@ -3,18 +3,50 @@
     "twoHours": "90",
     "additionalHour": "25",
     "overnight": "190",
-    "extraPersonSurcharge": "0.4"
+    "extraPersonSurcharge": "0.4",
+    "amenities": [
+      "Ar Condicionado",
+      "TV",
+      "Frigobar",
+      "Secador de Cabelo",
+      "Ducha",
+      "Garagem Privada",
+      "Wi-Fi"
+    ],
+    "description": "Ambiente completo e aconchegante, perfeito para quem busca praticidade sem abrir mão do conforto e da higiene impecável."
   },
   "Premium": {
     "twoHours": "120",
     "additionalHour": "25",
     "overnight": "220",
-    "extraPersonSurcharge": "0.4"
+    "extraPersonSurcharge": "0.4",
+    "amenities": [
+      "Ar Condicionado",
+      "TV",
+      "Frigobar",
+      "Secador de Cabelo",
+      "Ducha",
+      "Garagem Privada",
+      "Wi-Fi",
+      "Hidromassagem"
+    ],
+    "description": "Eleve a sua experiência, desfrute de uma banheira de hidromassagem revigorante em um ambiente desenhado para o prazer a dois."
   },
   "Master": {
     "twoHours": "130",
     "additionalHour": "25",
     "overnight": "230",
-    "extraPersonSurcharge": "0.4"
+    "extraPersonSurcharge": "0.4",
+    "amenities": [
+      "Ar Condicionado",
+      "TV",
+      "Frigobar",
+      "Secador de Cabelo",
+      "Ducha",
+      "Garagem para 2 Carros",
+      "Wi-Fi",
+      "Hidromassagem"
+    ],
+    "description": "Espaço e conforto em dobro. Conta com hidromassagem, garagem para dois veículos e opção com Pole Dance para momentos inesquecíveis."
   }
 }
