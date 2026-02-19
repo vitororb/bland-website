@@ -2,6 +2,7 @@ import { SuiteCard } from "@/components/cards/SuiteCard";
 import { Divisor } from "@/components/shared/Divisor";
 import { PageBanner } from "@/components/shared/PageBanner";
 import { Section } from "@/components/shared/Section";
+import suites from "@/data/suites.json";
 
 export default function Suites() {
   return (
@@ -17,12 +18,18 @@ export default function Suites() {
         title="Suítes Luxo"
         subtitle="Descubra nossas suítes de luxo, onde cada detalhe foi pensado para proporcionar uma experiência inesquecível. Com decoração sofisticada, amenidades exclusivas e um ambiente acolhedor, nossas suítes são o refúgio perfeito para momentos de relaxamento e romance."
       >
-        <SuiteCard
-          suitName="Suíte Luxo"
-          suitType="Luxo"
-          price="R$ 150,00"
-          adicionalHours="R$ 25,00"
-        />
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+          {Object.values(suites)
+            .filter((suite) => suite.type === "Luxo")
+            .map((suite) => (
+              <SuiteCard
+                key={suite.id}
+                imgUrl={suite.images[0]}
+                suiteNumber={suite.name}
+                isTrending={suite.isTrending}
+              />
+            ))}
+        </div>
       </Section>
 
       <Divisor />
@@ -32,7 +39,18 @@ export default function Suites() {
         title="Suítes Premium"
         subtitle="Suítes Premium são espaços luxuosos e bem equipados, com acabamentos de alta qualidade e amenidades exclusivas. Ideal para quem busca conforto e sofisticação em cada detalhe."
       >
-        <></>
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+          {Object.values(suites)
+            .filter((suite) => suite.type === "Premium")
+            .map((suite) => (
+              <SuiteCard
+                imgUrl={suite.images[0]}
+                key={suite.id}
+                suiteNumber={suite.name}
+                isTrending={suite.isTrending}
+              />
+            ))}
+        </div>
       </Section>
 
       <Divisor />
@@ -42,7 +60,18 @@ export default function Suites() {
         title="Suítes Master"
         subtitle="Suítes Master são o auge do luxo e conforto, oferecendo espaços amplos, decoração elegante e uma variedade de amenidades exclusivas. Perfeitas para quem deseja uma experiência verdadeiramente inesquecível."
       >
-        <></>
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
+          {Object.values(suites)
+            .filter((suite) => suite.type === "Master")
+            .map((suite) => (
+              <SuiteCard
+                imgUrl={suite.images[0]}
+                key={suite.id}
+                suiteNumber={suite.name}
+                isTrending={suite.isTrending}
+              />
+            ))}
+        </div>
       </Section>
 
       <Divisor />
