@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
@@ -13,9 +14,15 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 z-50 flex h-20 w-screen items-center justify-between bg-white px-4 shadow-lg">
+    <nav className="fixed top-0 z-50 flex h-20 w-screen items-center justify-between bg-white/60 px-4 shadow-lg backdrop-blur-sm">
       {/* Logo */}
-      <img src="/logos/logo-h.png" alt="Bland Motel" className="h-20 w-auto" />
+      <Link href="/" className="hover:cursor-pointer">
+        <img
+          src="/logos/logo-h.png"
+          alt="Bland Motel"
+          className="h-20 w-auto"
+        />
+      </Link>
 
       {/* Menu */}
       <div className="flex items-center gap-8">
