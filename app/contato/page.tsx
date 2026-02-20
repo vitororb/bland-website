@@ -51,7 +51,6 @@ export default function Contato() {
       <Section
         title="Formulário de Contato"
       >
-        <></>
       </Section> */}
 
       <Divisor />
