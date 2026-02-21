@@ -1,7 +1,7 @@
 import { SuiteCard } from "@/components/cards/SuiteCard";
-import { Divisor } from "@/components/shared/Divisor";
-import { PageBanner } from "@/components/shared/PageBanner";
-import { Section } from "@/components/shared/Section";
+import { Divisor } from "@/components/Divisor";
+import { PageBanner } from "@/components/PageBanner";
+import { Section } from "@/components/Section";
 import suites from "@/data/suites.json";
 
 export default function Suites() {
