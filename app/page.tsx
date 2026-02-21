@@ -2,9 +2,9 @@
 
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
-import { Divisor } from "@/components/shared/Divisor";
-import { PageBanner } from "@/components/shared/PageBanner";
-import { Section } from "@/components/shared/Section";
+import { Divisor } from "@/components/Divisor";
+import { PageBanner } from "@/components/PageBanner";
+import { Section } from "@/components/Section";
 import categories from "@/data/categories.json";
 import { Lock, Tv, Wifi, Wind } from "lucide-react";
 

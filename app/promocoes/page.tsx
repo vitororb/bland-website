@@ -1,7 +1,7 @@
 import { PromotionCard } from "@/components/cards/PromotionCard";
-import { Divisor } from "@/components/shared/Divisor";
-import { PageBanner } from "@/components/shared/PageBanner";
-import { Section } from "@/components/shared/Section";
+import { Divisor } from "@/components/Divisor";
+import { PageBanner } from "@/components/PageBanner";
+import { Section } from "@/components/Section";
 
 export default function Promocoes() {
   return (

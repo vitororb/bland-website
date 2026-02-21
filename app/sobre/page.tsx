@@ -1,7 +1,7 @@
 import { FeatureCard } from "@/components/cards/FeatureCard";
-import { Divisor } from "@/components/shared/Divisor";
-import { PageBanner } from "@/components/shared/PageBanner";
-import { Section } from "@/components/shared/Section";
+import { Divisor } from "@/components/Divisor";
+import { PageBanner } from "@/components/PageBanner";
+import { Section } from "@/components/Section";
 import { Award, Heart, Users, Zap } from "lucide-react";
 
 export default function Sobre() {
