@@ -45,14 +45,6 @@ export default function Contato() {
         </div>
       </Section>
 
-      {/* TO DO */}
-      {/* <Divisor/>
-
-      <Section
-        title="Formulário de Contato"
-      >
-      </Section> */}
-
       <Divisor />
 
       <Section title="Mapa de Localização">
@@ -61,7 +53,7 @@ export default function Contato() {
             title="localização"
             width="100%"
             height="100%"
-            src="https://maps.google.com/maps?width=100%25&height=600&hl=pt-BR&q=Mineiros%2C%20GO&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.123!2d-52.5261843!3d-17.5810575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93632606d5dd8547%3A0xb17273c4daad57ae!2sBland%20Motel%20-%20Mineiros!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr"
             allowFullScreen={true}
           ></iframe>
         </div>
