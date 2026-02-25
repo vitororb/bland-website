@@ -1,7 +1,9 @@
+import { InfoCard } from "@/components/cards/InfoCard";
 import { PromotionCard } from "@/components/cards/PromotionCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
+import { Gift, Sparkles } from "lucide-react";
 
 export default function Promocoes() {
   return (
@@ -20,7 +22,7 @@ export default function Promocoes() {
         title="Promoções Imperdíveis"
         subtitle="Experiências inesquecíveis com condições especiais pensadas para você."
       >
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-8">
           <PromotionCard img="/promotions/segunda.jpeg" />
           <PromotionCard img="/promotions/quarta.jpeg" />
           <PromotionCard img="/promotions/fidelidade.jpeg" />
@@ -31,7 +33,28 @@ export default function Promocoes() {
       <Divisor />
 
       <Section title="Informações Importantes">
-        <p>TO DO</p>
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+          <InfoCard
+            icon={<Gift className="text-primary h-12 w-12" />}
+            title="Como Usar as Promoções"
+            items={[
+              "Entre em contato conosco via WhatsApp",
+              "Informe qual promoção deseja aproveitar",
+              "Confirme a disponibilidade da data",
+              "Faça a reserva com desconto",
+            ]}
+          />
+          <InfoCard
+            icon={<Sparkles className="text-primary h-12 w-12" />}
+            title="Condições Gerais"
+            items={[
+              "Promoções não são cumulativas",
+              "Sujeitas a disponibilidade",
+              "Válidas mediante confirmação",
+              "Consulte termos específicos",
+            ]}
+          />
+        </div>
       </Section>
     </>
   );
