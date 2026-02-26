@@ -4,7 +4,7 @@
     "name": "Suíte 01",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite01-1.png"],
+    "images": ["/suite-deluxe/suite01.jpg"],
     "isTrending": false
   },
   {
@@ -12,7 +12,7 @@
     "name": "Suíte 02",
     "type": "Luxo",
     "extras": [],
-    "images": ["/suite-deluxe/suite02-1.png"],
+    "images": ["/suite-deluxe/suite02.jpg"],
     "isTrending": false
   },
   {
@@ -20,7 +20,7 @@
     "name": "Suíte 03",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite03-1.png"],
+    "images": ["/suite-deluxe/suite03.jpg"],
     "isTrending": false
   },
   {
@@ -28,7 +28,7 @@
     "name": "Suíte 04",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite04-1.png"],
+    "images": ["/suite-deluxe/suite04.jpg"],
     "isTrending": false
   },
   {
@@ -36,7 +36,7 @@
     "name": "Suíte 05",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite05-1.png"],
+    "images": ["/suite-deluxe/suite05.jpg"],
     "isTrending": false
   },
   {
@@ -44,7 +44,7 @@
     "name": "Suíte 06",
     "type": "Master",
     "extras": ["Cadeira Erótica", "Pole Dance"],
-    "images": ["/suite-master/suite06-1.png"],
+    "images": ["/suite-master/suite06.jpg"],
     "isTrending": false
   },
   {
@@ -52,7 +52,7 @@
     "name": "Suíte 07",
     "type": "Master",
     "extras": ["Cadeira Erótica"],
-    "images": ["/suite-master/suite07-1.png"],
+    "images": ["/suite-master/suite07.jpg"],
     "isTrending": false
   },
   {
@@ -60,7 +60,7 @@
     "name": "Suíte 08",
     "type": "Premium",
     "extras": [],
-    "images": ["/suite-premium/suite08-1.jpeg"],
+    "images": ["/suite-premium/suite08.jpeg"],
     "isTrending": true
   },
   {
@@ -68,7 +68,7 @@
     "name": "Suíte 09",
     "type": "Premium",
     "extras": ["Poltrona"],
-    "images": ["/suite-premium/suite09-1.jpeg"],
+    "images": ["/suite-premium/suite09.jpeg"],
     "isTrending": true
   },
   {
@@ -76,7 +76,7 @@
     "name": "Suíte 10",
     "type": "Premium",
     "extras": [],
-    "images": ["/suite-premium/suite10-1.jpeg"],
+    "images": ["/suite-premium/suite10.jpeg"],
     "isTrending": true
   },
   {
@@ -84,7 +84,7 @@
     "name": "Suíte 11",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite11-1.png"],
+    "images": ["/suite-deluxe/suite11.jpg"],
     "isTrending": false
   },
   {
@@ -92,7 +92,7 @@
     "name": "Suíte 12",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite12-1.png"],
+    "images": ["/suite-deluxe/suite12.jpg"],
     "isTrending": false
   }
 ]
