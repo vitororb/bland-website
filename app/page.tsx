@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <PageBanner
-        img="/hero-banner.jpg"
+        img="/bg-lencol-branco.png"
         title="Pronto para uma Experiência Inesquecível?"
         subtitle="Reserve agora sua suíte e desfrute de conforto, privacidade e luxo"
       >
@@ -20,6 +20,27 @@ export default function Home() {
           Faça sua Reserva
         </button>
       </PageBanner>
+
+      <Section
+        title="Nossas Categorias"
+        subtitle="Escolha a categoria perfeita para sua estadia. Do conforto ao luxo absoluto, cada suíte é pensada para proporcionar momentos únicos e inesquecíveis."
+      >
+        <div className="flex flex-wrap justify-center gap-8">
+          {Object.entries(categories).map(([name, data]) => (
+            <CategoryCard
+              key={name}
+              categoryName={name}
+              additionalHour={data.additionalHour}
+              overnight={data.overnight}
+              price={data.twoHours}
+              items={data.amenities}
+              url={`/suites#${name.toLowerCase()}`}
+            />
+          ))}
+        </div>
+      </Section>
+
+      <Divisor />
 
       <Section
         title="Seu refúgio de sofisticação!"
@@ -49,24 +70,6 @@ export default function Home() {
             title="Climatização"
             description="Ar-condicionado e ambiente pensado para o seu bem-estar"
           />
-        </div>
-      </Section>
-
-      <Divisor />
-
-      <Section title="Nossas Categorias">
-        <div className="flex flex-wrap justify-center gap-8">
-          {Object.entries(categories).map(([name, data]) => (
-            <CategoryCard
-              key={name}
-              categoryName={name}
-              additionalHour={data.additionalHour}
-              overnight={data.overnight}
-              price={data.twoHours}
-              description={data.description}
-              url={`/suites#${name.toLowerCase()}`}
-            />
-          ))}
         </div>
       </Section>
     </>
