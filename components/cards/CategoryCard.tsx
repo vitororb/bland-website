@@ -1,4 +1,5 @@
 import { CaretRightIcon, ForkKnifeIcon } from "@phosphor-icons/react/dist/ssr";
+import { Check } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
   price: string;
   additionalHour: string;
   overnight: string;
-  description: string;
+  items: string[];
   url: string;
 };
 
@@ -15,7 +16,7 @@ export const CategoryCard = ({
   price,
   additionalHour,
   overnight,
-  description,
+  items,
   url,
 }: Props) => {
   return (
@@ -24,7 +25,7 @@ export const CategoryCard = ({
         {categoryName}
       </header>
 
-      <div className="flex flex-col gap-4 rounded-2xl bg-white p-4">
+      <div className="flex h-full flex-col gap-4 rounded-2xl bg-white p-4">
         <div className="flex flex-col">
           <h2 className="font-family-cinzel text-xl font-bold text-red-700">
             R${price}
@@ -50,15 +51,28 @@ export const CategoryCard = ({
           </p>
         </div>
 
-        <hr className="w-full text-neutral-400" />
+        <div className="flex items-center gap-2">
+          <hr className="w-full text-neutral-400" />
+          <p className="text-xs font-semibold text-neutral-500 uppercase">
+            Inclui
+          </p>
+          <hr className="w-full text-neutral-400" />
+        </div>
 
-        <div className="h-20 w-full text-center text-xs font-medium text-neutral-500">
-          {description}
+        <div className="flex h-full w-full flex-col gap-2">
+          {items.map((item, idx) => (
+            <div
+              key={idx}
+              className="flex items-center gap-2 text-xs font-medium text-neutral-500"
+            >
+              <Check className="text-red-600" size={16} /> {item}
+            </div>
+          ))}
         </div>
 
         <Link
           href={url}
-          className="relative flex h-10 w-full items-center justify-center rounded-full border border-red-700 text-base font-medium text-red-700"
+          className="relative flex min-h-10 w-full cursor-[url('/cursors/heart-cursor.svg'),_pointer] items-center justify-center rounded-full border border-red-700 text-base font-medium text-red-700 transition-colors hover:bg-red-50"
         >
           Ver Suítes
           <CaretRightIcon size={16} className="absolute right-2" />
