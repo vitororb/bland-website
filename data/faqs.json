@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Como faço uma reserva?",
+    "answer": "Você pode fazer uma reserva através do WhatsApp, telefone ou enviando uma mensagem através do formulário de contato. Nossa equipe responderá em breve com as opções disponíveis."
+  },
+  {
+    "id": 2,
+    "question": "É necessário fazer reserva?",
+    "answer": "Não. Você pode comparecer sem reserva, conforme a disponibilidade das suítes. Para garantir uma categoria ou suíte específica, recomendamos reservar antecipadamente."
+  },
+  {
+    "id": 3,
+    "question": "Qual é a política de cancelamento?",
+    "answer": "Cancelamentos com 24 horas de antecedência recebem reembolso total. Cancelamentos com menos de 24 horas podem estar sujeitos a taxas. Consulte-nos para detalhes específicos."
+  },
+  {
+    "id": 4,
+    "question": "Vocês oferecem estacionamento?",
+    "answer": "Sim, oferecemos estacionamento privativo gratuito para todos os nossos hóspedes. É seguro e monitorado 24 horas."
+  },
+  {
+    "id": 5,
+    "question": "Qual é a idade mínima para hospedar-se?",
+    "answer": "A idade mínima é 18 anos. Será necessário apresentar um documento de identificação válido no check-in."
+  },
+  {
+    "id": 6,
+    "question": "Quais são as formas de pagamento?",
+    "answer": "Aceitamos dinheiro, Pix e cartões. Pagamentos em dinheiro podem receber 10% de desconto, conforme as regras da promoção vigente."
+  }
+]

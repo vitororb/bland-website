@@ -1,5 +1,4 @@
-import { CaretRightIcon, ForkKnifeIcon } from "@phosphor-icons/react/dist/ssr";
-import { Check } from "lucide-react";
+import { Check, ChevronRightIcon, UtensilsIcon } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -47,7 +46,7 @@ export const CategoryCard = ({
             </span>
           </h2>
           <p className="font-family-montserrat flex items-center gap-1 text-xs font-medium text-neutral-500">
-            + <ForkKnifeIcon size={16} /> Café da manhã incluso
+            + <UtensilsIcon size={12} /> Café da manhã incluso
           </p>
         </div>
 
@@ -72,10 +71,10 @@ export const CategoryCard = ({
 
         <Link
           href={url}
-          className="relative flex min-h-10 w-full cursor-[url('/cursors/heart-cursor.svg'),_pointer] items-center justify-center rounded-full border border-red-700 text-base font-medium text-red-700 transition-colors hover:bg-red-50"
+          className="relative flex min-h-10 w-full cursor-pointer items-center justify-center rounded-full border border-red-700 text-base font-medium text-red-700 transition-colors hover:bg-red-50"
         >
           Ver Suítes
-          <CaretRightIcon size={16} className="absolute right-2" />
+          <ChevronRightIcon size={16} className="absolute right-2" />
         </Link>
       </div>
     </div>

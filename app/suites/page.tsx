@@ -24,9 +24,9 @@ export default function Suites() {
             .filter((suite) => suite.type === "Luxo")
             .map((suite) => (
               <SuiteCard
-                key={suite.id}
+                key={suite.number}
                 imgUrl={suite.images[0]}
-                suiteNumber={suite.name}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -46,8 +46,8 @@ export default function Suites() {
             .map((suite) => (
               <SuiteCard
                 imgUrl={suite.images[0]}
-                key={suite.id}
-                suiteNumber={suite.name}
+                key={suite.number}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -67,8 +67,8 @@ export default function Suites() {
             .map((suite) => (
               <SuiteCard
                 imgUrl={suite.images[0]}
-                key={suite.id}
-                suiteNumber={suite.name}
+                key={suite.number}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -81,7 +81,7 @@ export default function Suites() {
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="bg-primary text-white">
+              <tr className="bg-secondary text-white">
                 <th className="font-cinzel px-6 py-4 text-left">Suíte</th>
                 <th className="px-6 py-4 text-center">2 Horas</th>
                 <th className="px-6 py-4 text-center">Hora Adicional</th>

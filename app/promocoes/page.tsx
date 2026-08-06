@@ -3,6 +3,7 @@ import { PromotionCard } from "@/components/cards/PromotionCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
+import motel from "@/data/motel.json";
 import { Gift, Sparkles } from "lucide-react";
 
 export default function Promocoes() {
@@ -13,9 +14,14 @@ export default function Promocoes() {
         title="Fique por Dentro das Novidades"
         subtitle="Aproveite nossas ofertas especiais e descontos exclusivos"
       >
-        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
+        <a
+          href={`https://wa.me/${motel.phone}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-secondary hover:bg-secondary/90 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
+        >
           Fale Conosco
-        </button>
+        </a>
       </PageBanner>
 
       <Section

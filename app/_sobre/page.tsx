@@ -109,7 +109,6 @@ export default function Sobre() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
             <StatItem value="10+" label="Anos de Experiência" />
-            <StatItem value="3" label="Suítes Premium" />
             <StatItem value="1000+" label="Clientes Satisfeitos" />
             <StatItem value="24h" label="Atendimento" />
           </div>

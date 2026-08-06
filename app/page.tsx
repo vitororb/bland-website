@@ -6,7 +6,8 @@ import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
 import categories from "@/data/categories.json";
-import { Lock, Tv, Wifi, Wind } from "lucide-react";
+import motel from "@/data/motel.json";
+import { ArrowRight, Lock, Tv, Wifi, Wind } from "lucide-react";
 
 export default function Home() {
   return (
@@ -14,11 +15,24 @@ export default function Home() {
       <PageBanner
         img="/bg-lencol-branco.png"
         title="Pronto para uma Experiência Inesquecível?"
-        subtitle="Reserve agora sua suíte e desfrute de conforto, privacidade e luxo"
+        subtitle="Reserve agora sua suíte e desfrute de conforto e privacidade"
       >
-        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
-          Faça sua Reserva
-        </button>
+        <div className="flex flex-wrap items-center gap-4">
+          <a
+            href={`https://wa.me/${motel.phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-secondary hover:bg-secondary/90 flex items-center gap-2 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
+          >
+            Faça sua reserva <ArrowRight size={16} />
+          </a>
+          {/* <a
+            href="/suites"
+            className="bg-white-10 hover:text-foreground ml-4 rounded-full border border-white/30 px-6 py-3 text-sm text-white backdrop-blur-sm transition-all duration-300 hover:border-transparent hover:bg-white"
+          >
+            Ver Suítes
+          </a> */}
+        </div>
       </PageBanner>
 
       <Section

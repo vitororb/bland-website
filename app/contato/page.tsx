@@ -3,6 +3,8 @@ import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
+import faqs from "@/data/faqs.json";
+import motel from "@/data/motel.json";
 import { Clock, Mail, MessageCircle, Phone } from "lucide-react";
 
 export default function Contato() {
@@ -13,9 +15,14 @@ export default function Contato() {
         title="Ficou com Dúvidas?"
         subtitle="Entre em contato conosco! Nossa equipe está pronta para ajudar"
       >
-        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
+        <a
+          href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20falar%20com%20vocês.`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-secondary hover:bg-secondary/90 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
+        >
           Fale Conosco via WhatsApp
-        </button>
+        </a>
       </PageBanner>
 
       <Section title="Contatos">
@@ -35,7 +42,7 @@ export default function Contato() {
           <FeatureCard
             icon={<Mail className="text-primary mx-auto mb-4 h-12 w-12" />}
             title="Email"
-            description="recepcaobland@gmail.com"
+            description={motel.email}
           />
           <FeatureCard
             icon={<Clock className="text-primary mx-auto mb-4 h-12 w-12" />}
@@ -63,22 +70,9 @@ export default function Contato() {
 
       <Section title="Perguntas Frequentes">
         <div className="mx-auto max-w-3xl space-y-6">
-          <FaqCard
-            question="Como faço uma reserva?"
-            answer="Você pode fazer uma reserva através do WhatsApp, telefone ou enviando uma mensagem através do formulário de contato. Nossa equipe responderá em breve com as opções disponíveis."
-          />
-          <FaqCard
-            question="Qual é a política de cancelamento?"
-            answer="Cancelamentos com 24 horas de antecedência recebem reembolso total. Cancelamentos com menos de 24 horas podem estar sujeitos a taxas. Consulte-nos para detalhes específicos."
-          />
-          <FaqCard
-            question="Vocês oferecem estacionamento?"
-            answer="Sim, oferecemos estacionamento privativo gratuito para todos os nossos hóspedes. É seguro e monitorado 24 horas."
-          />
-          <FaqCard
-            question="Qual é a idade mínima para hospedar-se?"
-            answer="A idade mínima é 18 anos. Será necessário apresentar um documento de identificação válido no check-in."
-          />
+          {Object.values(faqs).map((faq) => (
+            <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
+          ))}
         </div>
       </Section>
     </>

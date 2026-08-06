@@ -1,5 +1,6 @@
 "use client";
 
+import motel from "@/data/motel.json";
 import Link from "next/link";
 import { NavItem } from "./NavItem";
 
@@ -7,9 +8,9 @@ export const Navbar = () => {
   const navItems = [
     { id: "", label: "Início" },
     { id: "suites", label: "Suítes" },
-    { id: "servicos", label: "Serviços" },
+    // { id: "servicos", label: "Serviços" },
     { id: "promocoes", label: "Promoções" },
-    { id: "sobre", label: "Sobre" },
+    // { id: "sobre", label: "Sobre" },
     { id: "contato", label: "Contato" },
   ];
 
@@ -34,11 +35,10 @@ export const Navbar = () => {
 
         {/* Contact Button */}
         <a
-          href="https://wa.me/5564999500479"
+          href={`https://wa.me/${motel.phone}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-primary hover:bg-secondary flex items-center rounded-lg px-4 py-2 text-white transition-colors"
-          title="WhatsApp"
+          className="bg-secondary hover:bg-secondary/90 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
         >
           Reserve
         </a>

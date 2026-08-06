@@ -11,7 +11,8 @@
       "Secador de Cabelo",
       "Ducha",
       "Garagem Privada",
-      "Wi-Fi"
+      "Wi-Fi",
+      "Poltrona Tantra"
     ],
     "description": "Ambiente completo e aconchegante, perfeito para quem busca praticidade sem abrir mão do conforto e da higiene impecável."
   },
@@ -22,13 +23,13 @@
     "extraPersonSurcharge": "0.4",
     "amenities": [
       "Ar Condicionado",
-      "TV",
+      "Smart TV",
       "Frigobar",
       "Secador de Cabelo",
       "Ducha",
       "Garagem Privada",
       "Wi-Fi",
-      "Hidromassagem"
+      "Banheira de Hidromassagem"
     ],
     "description": "Eleve a sua experiência, desfrute de uma banheira de hidromassagem revigorante em um ambiente desenhado para o prazer a dois."
   },
@@ -39,13 +40,13 @@
     "extraPersonSurcharge": "0.4",
     "amenities": [
       "Ar Condicionado",
-      "TV",
+      "Smart TV",
       "Frigobar",
       "Secador de Cabelo",
       "Ducha",
       "Garagem para 2 Carros",
       "Wi-Fi",
-      "Hidromassagem"
+      "Banheira de Hidromassagem"
     ],
     "description": "Espaço e conforto em dobro. Conta com hidromassagem, garagem para dois veículos e opção com Pole Dance para momentos inesquecíveis."
   }
