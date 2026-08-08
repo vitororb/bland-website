@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/Button";
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Divisor } from "@/components/Divisor";
@@ -13,29 +14,25 @@ export default function Home() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Pronto para uma Experiência Inesquecível?"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Bem-vindo ao"
+        title="BLAND MOTEL"
         subtitle="Reserve agora sua suíte e desfrute de conforto e privacidade"
       >
-        <div className="flex flex-wrap items-center gap-4">
-          <a
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Button
+            label="Faça sua reserva"
             href={`https://wa.me/${motel.phone}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary hover:bg-secondary/90 flex items-center gap-2 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
-          >
-            Faça sua reserva <ArrowRight size={16} />
-          </a>
-          {/* <a
-            href="/suites"
-            className="bg-white-10 hover:text-foreground ml-4 rounded-full border border-white/30 px-6 py-3 text-sm text-white backdrop-blur-sm transition-all duration-300 hover:border-transparent hover:bg-white"
-          >
-            Ver Suítes
-          </a> */}
+            rightIcon={<ArrowRight size={16} />}
+          />
+          <Button label="Ver Suítes" href="/suites" variant="outline" />
         </div>
       </PageBanner>
 
       <Section
+        id="categorias"
         title="Nossas Categorias"
         subtitle="Escolha a categoria perfeita para sua estadia. Do conforto ao luxo absoluto, cada suíte é pensada para proporcionar momentos únicos e inesquecíveis."
       >

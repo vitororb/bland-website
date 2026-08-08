@@ -9,9 +9,10 @@ export default function Suites() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Escolha Sua Suíte Ideal"
-        subtitle="Todas as nossas suítes oferecem privacidade total, conforto máximo e experiência premium"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Escolha a sua"
+        title="SUÍTE IDEAL"
+        subtitle="Privacidade, conforto e sofisticação. Descubra nossas suítes e reserve a sua experiência inesquecível."
       />
 
       <Section

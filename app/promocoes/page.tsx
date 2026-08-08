@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import { InfoCard } from "@/components/cards/InfoCard";
 import { PromotionCard } from "@/components/cards/PromotionCard";
 import { Divisor } from "@/components/Divisor";
@@ -10,18 +11,17 @@ export default function Promocoes() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Fique por Dentro das Novidades"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Acompanhe nossas"
+        title="Novidades"
         subtitle="Aproveite nossas ofertas especiais e descontos exclusivos"
       >
-        <a
-          href={`https://wa.me/${motel.phone}`}
+        <Button
+          label="Fale Conosco"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-secondary hover:bg-secondary/90 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
-        >
-          Fale Conosco
-        </a>
+          href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20promoções.`}
+        />
       </PageBanner>
 
       <Section

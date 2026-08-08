@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import { FaqCard } from "@/components/cards/FaqCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Divisor } from "@/components/Divisor";
@@ -11,18 +12,17 @@ export default function Contato() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Ficou com Dúvidas?"
+        img="/bg-lencol-vermelho.png"
+        firstLine="AINDA COM"
+        title="Dúvidas?"
         subtitle="Entre em contato conosco! Nossa equipe está pronta para ajudar"
       >
-        <a
-          href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20falar%20com%20vocês.`}
+        <Button
+          label="Fale Conosco via WhatsApp"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-secondary hover:bg-secondary/90 rounded-full px-6 py-3 text-sm text-white transition-colors duration-200"
-        >
-          Fale Conosco via WhatsApp
-        </a>
+          href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20falar%20com%20vocês.`}
+        />
       </PageBanner>
 
       <Section title="Contatos">
