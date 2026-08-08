@@ -1,12 +1,12 @@
-import { Check, ChevronRightIcon, UtensilsIcon } from "lucide-react";
-import Link from "next/link";
+import { ArrowRightIcon, Check, UtensilsIcon } from "lucide-react";
+import { Button } from "../Button";
 
 type Props = {
   categoryName: string;
   price: string;
   additionalHour: string;
   overnight: string;
-  items: string[];
+  items: { name: string; highlight?: boolean }[];
   url: string;
 };
 
@@ -19,63 +19,68 @@ export const CategoryCard = ({
   url,
 }: Props) => {
   return (
-    <div className="flex w-2xs flex-col rounded-2xl border-b-4 border-red-700 bg-[url('/bg-lencol-vermelho.png')] bg-cover bg-center font-bold shadow-lg transition-shadow duration-300 hover:shadow-2xl">
-      <header className="font-family-cinzel flex h-16 w-full items-center justify-center text-2xl font-semibold text-white uppercase">
+    <div className="flex w-2xs flex-col rounded-2xl bg-[url('/bg-lencol-vermelho.png')] bg-cover bg-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <header className="font-family-cinzel flex h-20 w-full items-center justify-center text-2xl font-semibold text-white uppercase">
         {categoryName}
       </header>
 
       <div className="flex h-full flex-col gap-4 rounded-2xl bg-white p-4">
+        {/* Pricing */}
         <div className="flex flex-col">
-          <h2 className="font-family-cinzel text-xl font-bold text-red-700">
+          <h2 className="font-family-cinzel text-secondary text-3xl font-semibold">
             R${price}
-            <span className="font-family-montserrat text-xs font-medium text-neutral-500">
+            <span className="font-family-montserrat text-muted text-sm font-normal text-neutral-600">
               /2h
             </span>
           </h2>
-          <p className="font-family-montserrat text-xs font-medium text-neutral-500">
+          <p className="font-family-montserrat text-muted text-xs text-neutral-600">
             + R${additionalHour} por hora adicional
           </p>
         </div>
 
+        {/* Overnight */}
         <div className="flex flex-col">
-          <h2 className="font-family-cinzel text-xl font-bold text-red-700">
+          <h2 className="font-family-cinzel text-secondary/90 text-lg font-medium">
             R${overnight}
-            <span className="font-family-montserrat text-xs font-medium text-neutral-500">
+            <span className="font-family-montserrat text-muted text-xs font-normal text-neutral-600">
               {" "}
               Pernoite
             </span>
           </h2>
-          <p className="font-family-montserrat flex items-center gap-1 text-xs font-medium text-neutral-500">
+          <p className="font-family-montserrat flex items-center gap-1 text-xs text-neutral-600">
             + <UtensilsIcon size={12} /> Café da manhã incluso
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
-          <hr className="w-full text-neutral-400" />
-          <p className="text-xs font-semibold text-neutral-500 uppercase">
-            Inclui
-          </p>
-          <hr className="w-full text-neutral-400" />
-        </div>
+        {/* Features */}
+        <p className="font-family-cinzel text-center text-xs tracking-widest text-neutral-600 uppercase">
+          — Comodidades —
+        </p>
 
         <div className="flex h-full w-full flex-col gap-2">
           {items.map((item, idx) => (
-            <div
+            <span
               key={idx}
-              className="flex items-center gap-2 text-xs font-medium text-neutral-500"
+              className={`flex items-center gap-2 text-xs ${item.highlight ? "text-secondary font-medium" : "text-neutral-600"}`}
             >
-              <Check className="text-red-600" size={16} /> {item}
-            </div>
+              <Check
+                className={
+                  item.highlight ? "text-secondary" : "text-neutral-600"
+                }
+                size={16}
+              />
+              {item.name}
+            </span>
           ))}
         </div>
 
-        <Link
+        <Button
+          label="Ver Suítes"
           href={url}
-          className="relative flex min-h-10 w-full cursor-pointer items-center justify-center rounded-full border border-red-700 text-base font-medium text-red-700 transition-colors hover:bg-red-50"
-        >
-          Ver Suítes
-          <ChevronRightIcon size={16} className="absolute right-2" />
-        </Link>
+          variant="secondary"
+          className="justify-center"
+          rightIcon={<ArrowRightIcon size={16} />}
+        />
       </div>
     </div>
   );
