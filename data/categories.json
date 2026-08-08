@@ -5,14 +5,14 @@
     "overnight": "195",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem Privada",
-      "Wi-Fi",
-      "Poltrona Tantra"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem Privada" },
+      { "name": "Poltrona Tantra", "highlight": true }
     ],
     "description": "Ambiente completo e aconchegante, perfeito para quem busca praticidade sem abrir mão do conforto e da higiene impecável."
   },
@@ -22,14 +22,14 @@
     "overnight": "225",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "Smart TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem Privada",
-      "Wi-Fi",
-      "Banheira de Hidromassagem"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem Privada" },
+      { "name": "Banheira de Hidromassagem", "highlight": true }
     ],
     "description": "Eleve a sua experiência, desfrute de uma banheira de hidromassagem revigorante em um ambiente desenhado para o prazer a dois."
   },
@@ -39,14 +39,14 @@
     "overnight": "235",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "Smart TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem para 2 Carros",
-      "Wi-Fi",
-      "Banheira de Hidromassagem"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem para 2 Carros", "highlight": true },
+      { "name": "Banheira de Hidromassagem", "highlight": true }
     ],
     "description": "Espaço e conforto em dobro. Conta com hidromassagem, garagem para dois veículos e opção com Pole Dance para momentos inesquecíveis."
   }

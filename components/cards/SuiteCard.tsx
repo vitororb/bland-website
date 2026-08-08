@@ -1,5 +1,6 @@
 import motel from "@/data/motel.json";
 import { ArrowRight, Flame } from "lucide-react";
+import { Button } from "../Button";
 
 type Props = {
   imgUrl: string;
@@ -32,14 +33,15 @@ export const SuiteCard = ({ imgUrl, suiteNumber, isTrending }: Props) => {
         </p>
       </div>
 
-      <a
+      <Button
+        label="Reservar"
         href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20reservar%20a%20Suíte%20${suiteNumber}.`}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white-10 hover:text-foreground absolute right-4 bottom-4 flex cursor-pointer items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-sm text-white backdrop-blur-sm transition-all duration-300 hover:border-transparent hover:bg-white"
-      >
-        Reservar <ArrowRight size={16} />
-      </a>
+        variant="outline"
+        className="absolute right-4 bottom-4"
+        rightIcon={<ArrowRight size={16} />}
+      />
     </div>
   );
 };
