@@ -1,4 +1,6 @@
+import motel from "@/data/motel.json";
 import { ArrowRight, Flame } from "lucide-react";
+import { Button } from "../Button";
 
 type Props = {
   imgUrl: string;
@@ -8,27 +10,38 @@ type Props = {
 
 export const SuiteCard = ({ imgUrl, suiteNumber, isTrending }: Props) => {
   return (
-    <div className="relative flex min-w-xs flex-col rounded-lg bg-white shadow-lg transition-shadow duration-300 hover:shadow-2xl">
+    <div className="bg-muted relative flex h-96 w-72 flex-col justify-between overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
+      <img
+        src={imgUrl}
+        alt={`Suíte ${suiteNumber}`}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+      />
+
       {isTrending && (
-        <span className="absolute top-2 right-2 flex items-center justify-center gap-1 rounded-full border border-red-700 bg-white/50 px-2 text-xs font-medium text-red-700">
+        <span className="bg-secondary/70 absolute top-4 left-4 flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-medium text-white">
           <Flame size={12} />
           Em Alta
         </span>
       )}
 
-      <div
-        style={{ backgroundImage: `url('${imgUrl}')` }}
-        className="h-48 rounded-t-lg bg-cover bg-center"
-      />
-
-      <div className="flex flex-col p-6">
-        <h3 className="text-secondary font-family-cinzel text-2xl font-bold">
+      <div className="absolute bottom-4 left-4 flex flex-col gap-1">
+        <span className="font-family-cinzel block text-xs tracking-widest text-white uppercase">
+          Suíte
+        </span>
+        <p className="font-family-cinzel text-5xl font-bold text-white">
           {suiteNumber}
-        </h3>
-        <button className="text-primary hover:text-secondary flex items-center gap-2 transition-colors hover:cursor-pointer">
-          Reservar <ArrowRight size={16} />
-        </button>
+        </p>
       </div>
+
+      <Button
+        label="Reservar"
+        href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20reservar%20a%20Suíte%20${suiteNumber}.`}
+        target="_blank"
+        rel="noopener noreferrer"
+        variant="outline"
+        className="absolute right-4 bottom-4"
+        rightIcon={<ArrowRight size={16} />}
+      />
     </div>
   );
 };

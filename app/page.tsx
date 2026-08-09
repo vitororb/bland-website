@@ -1,25 +1,57 @@
 "use client";
 
+import { Button } from "@/components/Button";
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
 import categories from "@/data/categories.json";
-import { Lock, Tv, Wifi, Wind } from "lucide-react";
+import motel from "@/data/motel.json";
+import { ArrowRight, Lock, Tv, Wifi, Wind } from "lucide-react";
 
 export default function Home() {
   return (
     <>
       <PageBanner
-        img="/hero-banner.jpg"
-        title="Pronto para uma Experiência Inesquecível?"
-        subtitle="Reserve agora sua suíte e desfrute de conforto, privacidade e luxo"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Bem-vindo ao"
+        title="BLAND MOTEL"
+        subtitle="Reserve agora sua suíte e desfrute de conforto e privacidade"
       >
-        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
-          Faça sua Reserva
-        </button>
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Button
+            label="Faça sua reserva"
+            href={`https://wa.me/${motel.phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            rightIcon={<ArrowRight size={16} />}
+          />
+          <Button label="Ver Suítes" href="/suites" variant="outline" />
+        </div>
       </PageBanner>
+
+      <Section
+        id="categorias"
+        title="Nossas Categorias"
+        subtitle="Escolha a categoria perfeita para sua estadia. Do conforto ao luxo absoluto, cada suíte é pensada para proporcionar momentos únicos e inesquecíveis."
+      >
+        <div className="flex flex-wrap justify-center gap-8">
+          {Object.entries(categories).map(([name, data]) => (
+            <CategoryCard
+              key={name}
+              categoryName={name}
+              additionalHour={data.additionalHour}
+              overnight={data.overnight}
+              price={data.twoHours}
+              items={data.amenities}
+              url={`/suites#${name.toLowerCase()}`}
+            />
+          ))}
+        </div>
+      </Section>
+
+      <Divisor />
 
       <Section
         title="Seu refúgio de sofisticação!"
@@ -49,24 +81,6 @@ export default function Home() {
             title="Climatização"
             description="Ar-condicionado e ambiente pensado para o seu bem-estar"
           />
-        </div>
-      </Section>
-
-      <Divisor />
-
-      <Section title="Nossas Categorias">
-        <div className="flex flex-wrap justify-center gap-8">
-          {Object.entries(categories).map(([name, data]) => (
-            <CategoryCard
-              key={name}
-              categoryName={name}
-              additionalHour={data.additionalHour}
-              overnight={data.overnight}
-              price={data.twoHours}
-              description={data.description}
-              url={`/suites#${name.toLowerCase()}`}
-            />
-          ))}
         </div>
       </Section>
     </>

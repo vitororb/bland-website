@@ -1,21 +1,27 @@
+import { Button } from "@/components/Button";
 import { InfoCard } from "@/components/cards/InfoCard";
 import { PromotionCard } from "@/components/cards/PromotionCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
+import motel from "@/data/motel.json";
 import { Gift, Sparkles } from "lucide-react";
 
 export default function Promocoes() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Fique por Dentro das Novidades"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Acompanhe nossas"
+        title="Novidades"
         subtitle="Aproveite nossas ofertas especiais e descontos exclusivos"
       >
-        <button className="bg-primary hover:bg-secondary inline-block rounded-lg px-6 py-3 font-semibold text-white transition-colors duration-300 hover:cursor-pointer">
-          Fale Conosco
-        </button>
+        <Button
+          label="Fale Conosco"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={`https://wa.me/${motel.phone}?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20promoções.`}
+        />
       </PageBanner>
 
       <Section

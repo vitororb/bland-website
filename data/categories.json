@@ -1,51 +1,52 @@
 {
   "Luxo": {
-    "twoHours": "90",
+    "twoHours": "95",
     "additionalHour": "25",
-    "overnight": "190",
+    "overnight": "195",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem Privada",
-      "Wi-Fi"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem Privada" },
+      { "name": "Poltrona Tantra", "highlight": true }
     ],
     "description": "Ambiente completo e aconchegante, perfeito para quem busca praticidade sem abrir mão do conforto e da higiene impecável."
   },
   "Premium": {
-    "twoHours": "120",
+    "twoHours": "125",
     "additionalHour": "25",
-    "overnight": "220",
+    "overnight": "225",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem Privada",
-      "Wi-Fi",
-      "Hidromassagem"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem Privada" },
+      { "name": "Banheira de Hidromassagem", "highlight": true }
     ],
     "description": "Eleve a sua experiência, desfrute de uma banheira de hidromassagem revigorante em um ambiente desenhado para o prazer a dois."
   },
   "Master": {
-    "twoHours": "130",
+    "twoHours": "135",
     "additionalHour": "25",
-    "overnight": "230",
+    "overnight": "235",
     "extraPersonSurcharge": "0.4",
     "amenities": [
-      "Ar Condicionado",
-      "TV",
-      "Frigobar",
-      "Secador de Cabelo",
-      "Ducha",
-      "Garagem para 2 Carros",
-      "Wi-Fi",
-      "Hidromassagem"
+      { "name": "Ar Condicionado" },
+      { "name": "Smart TV" },
+      { "name": "Frigobar" },
+      { "name": "Secador de Cabelo" },
+      { "name": "Ducha" },
+      { "name": "Wi-Fi" },
+      { "name": "Garagem para 2 Carros", "highlight": true },
+      { "name": "Banheira de Hidromassagem", "highlight": true }
     ],
     "description": "Espaço e conforto em dobro. Conta com hidromassagem, garagem para dois veículos e opção com Pole Dance para momentos inesquecíveis."
   }

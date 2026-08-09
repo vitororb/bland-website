@@ -2,7 +2,7 @@
 
 :root {
   /* Cores base */
-  --background: #f4f3f2;
+  --background: #fffaee;
   --foreground: #171717;
 
   /* Paleta de cores personalizada */
@@ -23,13 +23,6 @@
   /* Fontes */
   --font-family-cinzel: var(--font-cinzel);
   --font-family-montserrat: var(--font-montserrat);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--background);
-    --foreground: var(--foreground);
-  }
 }
 
 body {

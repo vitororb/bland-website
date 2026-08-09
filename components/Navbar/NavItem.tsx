@@ -15,10 +15,10 @@ export const NavItem = ({ text, url }: Props) => {
   return (
     <Link
       href={url}
-      className={`font-montserrat text-sm font-semibold uppercase transition-colors hover:cursor-pointer ${
+      className={`font-montserrat text-sm font-medium transition-colors duration-200 hover:cursor-pointer ${
         isActive
-          ? "text-primary border-primary border-b-2 pb-1"
-          : "hover:text-primary text-gray-700"
+          ? "border-b-2 border-white pb-1 text-white"
+          : "text-white/80 hover:text-white"
       }`}
     >
       {text}

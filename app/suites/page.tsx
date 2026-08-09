@@ -2,15 +2,17 @@ import { SuiteCard } from "@/components/cards/SuiteCard";
 import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
+import categories from "@/data/categories.json";
 import suites from "@/data/suites.json";
 
 export default function Suites() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
-        title="Escolha Sua Suíte Ideal"
-        subtitle="Todas as nossas suítes oferecem privacidade total, conforto máximo e experiência premium"
+        img="/bg-lencol-vermelho.png"
+        firstLine="Escolha a sua"
+        title="SUÍTE IDEAL"
+        subtitle="Privacidade, conforto e sofisticação. Descubra nossas suítes e reserve a sua experiência inesquecível."
       />
 
       <Section
@@ -23,9 +25,9 @@ export default function Suites() {
             .filter((suite) => suite.type === "Luxo")
             .map((suite) => (
               <SuiteCard
-                key={suite.id}
+                key={suite.number}
                 imgUrl={suite.images[0]}
-                suiteNumber={suite.name}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -45,8 +47,8 @@ export default function Suites() {
             .map((suite) => (
               <SuiteCard
                 imgUrl={suite.images[0]}
-                key={suite.id}
-                suiteNumber={suite.name}
+                key={suite.number}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -66,8 +68,8 @@ export default function Suites() {
             .map((suite) => (
               <SuiteCard
                 imgUrl={suite.images[0]}
-                key={suite.id}
-                suiteNumber={suite.name}
+                key={suite.number}
+                suiteNumber={suite.number}
                 isTrending={suite.isTrending}
               />
             ))}
@@ -80,7 +82,7 @@ export default function Suites() {
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
-              <tr className="bg-primary text-white">
+              <tr className="bg-secondary text-white">
                 <th className="font-cinzel px-6 py-4 text-left">Suíte</th>
                 <th className="px-6 py-4 text-center">2 Horas</th>
                 <th className="px-6 py-4 text-center">Hora Adicional</th>
@@ -92,25 +94,43 @@ export default function Suites() {
                 <td className="text-secondary px-6 py-4 font-semibold">
                   Suíte Luxo
                 </td>
-                <td className="px-6 py-4 text-center">R$ 95</td>
-                <td className="px-6 py-4 text-center">R$ 25</td>
-                <td className="px-6 py-4 text-center">R$ 195</td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Luxo.twoHours}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Luxo.additionalHour}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Luxo.overnight}
+                </td>
               </tr>
               <tr className="border-b hover:bg-gray-100">
                 <td className="text-secondary px-6 py-4 font-semibold">
                   Suíte Premium
                 </td>
-                <td className="px-6 py-4 text-center">R$ 125</td>
-                <td className="px-6 py-4 text-center">R$ 25</td>
-                <td className="px-6 py-4 text-center">R$ 225</td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Premium.twoHours}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Premium.additionalHour}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Premium.overnight}
+                </td>
               </tr>
               <tr className="hover:bg-gray-100">
                 <td className="text-secondary px-6 py-4 font-semibold">
                   Suíte Master
                 </td>
-                <td className="px-6 py-4 text-center">R$ 135</td>
-                <td className="px-6 py-4 text-center">R$ 25</td>
-                <td className="px-6 py-4 text-center">R$ 235</td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Master.twoHours}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Master.additionalHour}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  R$ {categories.Master.overnight}
+                </td>
               </tr>
             </tbody>
           </table>
