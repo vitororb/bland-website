@@ -26,18 +26,18 @@ export default function Contato() {
       </PageBanner>
 
       <Section title="Contatos">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <FeatureCard
             icon={<Phone className="text-primary mx-auto mb-4 h-12 w-12" />}
             title="Telefone"
-            description="(64) 9 9950-0479"
+            description={motel.phoneFormatted}
           />
           <FeatureCard
             icon={
               <MessageCircle className="text-primary mx-auto mb-4 h-12 w-12" />
             }
             title="WhatsApp"
-            description="(64) 9 9950-0479"
+            description={motel.phoneFormatted}
           />
           <FeatureCard
             icon={<Mail className="text-primary mx-auto mb-4 h-12 w-12" />}
@@ -69,7 +69,7 @@ export default function Contato() {
       <Divisor />
 
       <Section title="Perguntas Frequentes">
-        <div className="mx-auto max-w-3xl space-y-6">
+        <div className="mx-auto space-y-6">
           {Object.values(faqs).map((faq) => (
             <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
           ))}
