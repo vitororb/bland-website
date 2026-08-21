@@ -17,24 +17,20 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 z-50 flex w-screen flex-col bg-black/10 px-4 backdrop-blur-xs"
+      className="fixed top-0 z-50 flex w-screen flex-col items-center bg-black/10 backdrop-blur-xs"
       style={{
         background:
           "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent)",
       }}
     >
-      <div className="flex h-20 w-full items-center justify-between">
+      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6">
         {/* Logo */}
-        <Link href="/" className="hover:cursor-pointer">
-          <img
-            src="/logos/logo-h-white.png"
-            alt="Bland Motel"
-            className="h-6 w-auto"
-          />
+        <Link href="/" className="shrink-0 hover:cursor-pointer">
+          <img src="/logos/logo-h-white.png" alt="Logo" className="h-6 w-fit" />
         </Link>
 
         {/* Menu */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-8 sm:flex">
           {navItems.map((item) => (
             <NavItem key={item.id} url={`/${item.id}`} text={item.label} />
           ))}
@@ -50,7 +46,7 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu*/}
-      <div className="flex items-center gap-8 overflow-x-auto p-4 md:hidden">
+      <div className="flex items-center gap-8 overflow-x-auto p-4 sm:hidden">
         {navItems.map((item) => (
           <NavItem key={item.id} url={`/${item.id}`} text={item.label} />
         ))}
