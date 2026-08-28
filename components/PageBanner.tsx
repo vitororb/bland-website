@@ -16,7 +16,7 @@ export const PageBanner = ({
   children,
 }: Props) => {
   return (
-    <div
+    <section
       className="relative flex h-screen items-center bg-cover bg-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('${img}')`,
@@ -34,7 +34,7 @@ export const PageBanner = ({
             {title}
           </h1>
 
-          {subtitle && <p className="mb-4 text-lg text-gray-200">{subtitle}</p>}
+          {subtitle && <p className="text-lg text-gray-200">{subtitle}</p>}
         </div>
 
         {children}
@@ -46,6 +46,6 @@ export const PageBanner = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

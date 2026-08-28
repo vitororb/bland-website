@@ -10,11 +10,11 @@ type Props = {
 
 export const SuiteCard = ({ imgUrl, suiteNumber, isTrending }: Props) => {
   return (
-    <div className="bg-muted relative flex h-96 w-72 flex-col justify-between overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
+    <div className="group bg-muted relative flex h-96 w-72 shrink-0 flex-col overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
       <img
         src={imgUrl}
         alt={`Suíte ${suiteNumber}`}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
       {isTrending && (

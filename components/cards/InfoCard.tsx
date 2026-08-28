@@ -19,7 +19,9 @@ export const InfoCard = ({ icon, title, description, items }: Props) => {
       {items && items.length > 0 && (
         <ul className="space-y-2 text-sm text-gray-600">
           {items.map((item, idx) => (
-            <li key={idx}>✓ {item}</li>
+            <li key={idx}>
+              <span className="text-primary">✓</span> {item}
+            </li>
           ))}
         </ul>
       )}

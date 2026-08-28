@@ -1,88 +1,67 @@
-import { Heart, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import motel from "../../data/motel.json";
+import motel from "@/data/motel.json";
+import {
+  FacebookLogoIcon,
+  InstagramLogoIcon,
+  WhatsappLogoIcon,
+} from "@phosphor-icons/react/dist/ssr";
+import { ClockIcon, MailIcon, MapPinIcon } from "lucide-react";
+import { Button } from "../Button";
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary text-white">
-      <div className="container mx-auto px-4 py-16">
-        <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* About */}
-          <div>
-            <h3 className="font-family-cinzel mb-4 text-xl font-bold">
-              BLAND MOTEL
-            </h3>
-            <p className="text-sm text-gray-300">
-              Experiência premium de luxo e privacidade em Mineiros-GO.
-            </p>
-          </div>
+    <footer className="bg-secondary w-screen text-white">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8">
+        {/* Logo */}
+        <img
+          src="/logos/logo-h-white.png"
+          alt="Logo"
+          className="hidden h-10 w-fit shrink-0 sm:inline-flex"
+        />
 
-          {/* Location */}
-          <div>
-            <h4 className="font-family-cinzel mb-4 font-bold">Localização</h4>
-            <div className="overflow-hidden rounded-lg shadow-lg">
-              <iframe
-                title="localização"
-                width="100%"
-                height="100%"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.123!2d-52.5261843!3d-17.5810575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93632606d5dd8547%3A0xb17273c4daad57ae!2sBland%20Motel%20-%20Mineiros!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr"
-                allowFullScreen={true}
-              />
+        {/* Contact Information */}
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex flex-col gap-2 text-sm">
+            <div className="flex items-center gap-2">
+              <MapPinIcon size={16} className="font-light" />
+              <span>{motel.address}</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <WhatsappLogoIcon size={16} />
+              <span>{motel.phoneFormatted}</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <MailIcon size={16} />
+              <span>{motel.email}</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <ClockIcon size={16} />
+              <span>Aberto 24 horas</span>
             </div>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="font-family-cinzel mb-4 font-bold">Contato</h4>
-            <div className="space-y-2 text-sm">
-              <a
-                href="tel:+5564999500479"
-                className="hover:text-accent flex items-center gap-2 transition-colors"
-              >
-                <Phone size={16} />
-                (64) 9 9950-0479
-              </a>
-              <a
-                href={`https://wa.me/${motel.phone}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-accent flex items-center gap-2 transition-colors"
-              >
-                <MessageCircle size={16} />
-                WhatsApp
-              </a>
-              <a
-                href="mailto:recepcaobland@gmail.com"
-                className="hover:text-accent flex items-center gap-2 transition-colors"
-              >
-                <Mail size={16} />
-                recepcaobland@gmail.com
-              </a>
-              <div className="flex items-center gap-2">
-                <MapPin size={16} />
-                Mineiros, GO
-              </div>
-            </div>
-          </div>
-
-          {/* Hours */}
-          <div>
-            <h4 className="font-family-cinzel mb-4 font-bold">Horário</h4>
-            <p className="text-sm">
-              <span className="block font-semibold">Aberto 24 horas</span>
-              <span className="text-gray-300">Todos os dias</span>
-            </p>
-          </div>
+          <Button
+            href={`https://wa.me/${motel.phone}`}
+            leftIcon={<WhatsappLogoIcon size={20} />}
+            label="Entre em contato"
+            className="hidden sm:inline-flex"
+            variant="outline"
+          />
         </div>
 
-        {/* Divider */}
-        <div className="border-accent-light my-8 border-t"></div>
-
-        {/* Bottom */}
-        <div className="flex flex-col items-center justify-between text-sm text-gray-300 md:flex-row">
-          <p>© 2026 Bland Motel. Todos os direitos reservados.</p>
-          <p className="mt-4 flex items-center gap-1 md:mt-0">
-            Feito com <Heart className="text-red-200" size={16} /> para você
+        {/* Footer Bottom */}
+        <div className="flex items-center justify-between gap-4 border-t border-white/10 pt-4">
+          <p className="text-sm">
+            © {new Date().getFullYear()} Bland Motel. Todos os direitos
+            reservados.
           </p>
+
+          <div className="flex items-center gap-2">
+            <InstagramLogoIcon size={20} />
+            <FacebookLogoIcon size={20} weight="fill" />
+          </div>
         </div>
       </div>
     </footer>

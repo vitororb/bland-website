@@ -57,7 +57,7 @@ export default function Home() {
         title="Seu refúgio de sofisticação!"
         subtitle="Mais do que uma estadia, o Bland Motel oferece a privacidade e o conforto que você merece. O cenário perfeito para fugir da rotina e viver experiências inesquecíveis."
       >
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <FeatureCard
             icon={<Lock className="text-primary mx-auto mb-4 h-12 w-12" />}
             title="Privacidade Total"

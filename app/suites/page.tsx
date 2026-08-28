@@ -20,7 +20,7 @@ export default function Suites() {
         title="Suítes Luxo"
         subtitle="Descubra nossas suítes de luxo, onde cada detalhe foi pensado para proporcionar uma experiência inesquecível. Com decoração sofisticada, amenidades exclusivas e um ambiente acolhedor, nossas suítes são o refúgio perfeito para momentos de relaxamento e romance."
       >
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex w-full gap-4 overflow-x-auto p-2 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:p-0">
           {Object.values(suites)
             .filter((suite) => suite.type === "Luxo")
             .map((suite) => (
@@ -41,7 +41,7 @@ export default function Suites() {
         title="Suítes Premium"
         subtitle="Suítes Premium são espaços luxuosos e bem equipados, com acabamentos de alta qualidade e amenidades exclusivas. Ideal para quem busca conforto e sofisticação em cada detalhe."
       >
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex w-full gap-4 overflow-x-auto p-2 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:p-0">
           {Object.values(suites)
             .filter((suite) => suite.type === "Premium")
             .map((suite) => (
@@ -62,7 +62,7 @@ export default function Suites() {
         title="Suítes Master"
         subtitle="Suítes Master são o auge do luxo e conforto, oferecendo espaços amplos, decoração elegante e uma variedade de amenidades exclusivas. Perfeitas para quem deseja uma experiência verdadeiramente inesquecível."
       >
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex w-full gap-4 overflow-x-auto p-2 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:p-0">
           {Object.values(suites)
             .filter((suite) => suite.type === "Master")
             .map((suite) => (
