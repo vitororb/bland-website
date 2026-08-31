@@ -2,8 +2,8 @@
 
 import motel from "@/data/motel.json";
 import Link from "next/link";
-import { Button } from "../Button";
-import { NavItem } from "./NavItem";
+import { usePathname } from "next/navigation";
+import { Button } from "./Button";
 
 export const Navbar = () => {
   const navItems = [
@@ -52,5 +52,28 @@ export const Navbar = () => {
         ))}
       </div>
     </nav>
+  );
+};
+
+type NavItemProps = {
+  url: string;
+  text: string;
+};
+
+export const NavItem = ({ text, url }: NavItemProps) => {
+  const pathname = usePathname();
+  const isActive = pathname === url;
+
+  return (
+    <Link
+      href={url}
+      className={`font-montserrat text-sm font-medium transition-colors duration-200 hover:cursor-pointer ${
+        isActive
+          ? "border-b-2 border-white pb-1 text-white"
+          : "text-white/80 hover:text-white"
+      }`}
+    >
+      {text}
+    </Link>
   );
 };
