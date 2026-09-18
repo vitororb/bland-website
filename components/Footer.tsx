@@ -5,7 +5,7 @@ import {
   WhatsappLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { ClockIcon, MailIcon, MapPinIcon } from "lucide-react";
-import { Button } from "../Button";
+import { Button } from "./Button";
 
 export const Footer = () => {
   return (
