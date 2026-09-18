@@ -26,7 +26,11 @@ export const Navbar = () => {
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="shrink-0 hover:cursor-pointer">
-          <img src="/logos/logo-h-white.png" alt="Logo" className="h-6 w-fit" />
+          <img
+            src="/logos/logo-h-white.png"
+            alt="Logo"
+            className="h-6 w-auto"
+          />
         </Link>
 
         {/* Menu */}
