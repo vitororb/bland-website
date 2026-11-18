@@ -1,8 +1,8 @@
 {
   "Luxo": {
-    "twoHours": "95",
-    "additionalHour": "25",
-    "overnight": "195",
+    "twoHours": "110",
+    "additionalHour": "30",
+    "overnight": "230",
     "extraPersonSurcharge": "0.4",
     "amenities": [
       { "name": "Ar Condicionado" },
@@ -17,9 +17,9 @@
     "description": "Ambiente completo e aconchegante, perfeito para quem busca praticidade sem abrir mão do conforto e da higiene impecável."
   },
   "Premium": {
-    "twoHours": "125",
-    "additionalHour": "25",
-    "overnight": "225",
+    "twoHours": "145",
+    "additionalHour": "30",
+    "overnight": "265",
     "extraPersonSurcharge": "0.4",
     "amenities": [
       { "name": "Ar Condicionado" },
@@ -34,9 +34,9 @@
     "description": "Eleve a sua experiência, desfrute de uma banheira de hidromassagem revigorante em um ambiente desenhado para o prazer a dois."
   },
   "Master": {
-    "twoHours": "135",
-    "additionalHour": "25",
-    "overnight": "235",
+    "twoHours": "155",
+    "additionalHour": "30",
+    "overnight": "275",
     "extraPersonSurcharge": "0.4",
     "amenities": [
       { "name": "Ar Condicionado" },
