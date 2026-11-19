@@ -24,20 +24,33 @@ export const Footer = () => {
         {/* Contact Information */}
         <div className="flex items-center justify-between gap-4">
           <div className="flex flex-col gap-2 text-sm">
-            <div className="flex items-center gap-2">
-              <MapPinIcon size={16} className="font-light" />
+            <a
+              href={motel.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-fit items-center gap-2 hover:underline"
+            >
+              <MapPinIcon size={16} className="shrink-0 font-light" />
               <span>{motel.address}</span>
-            </div>
+            </a>
 
-            <div className="flex items-center gap-2">
-              <WhatsappLogoIcon size={16} />
+            <a
+              href={`https://wa.me/${motel.phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-fit items-center gap-2 hover:underline"
+            >
+              <WhatsappLogoIcon size={16} className="shrink-0" />
               <span>{motel.phoneFormatted}</span>
-            </div>
+            </a>
 
-            <div className="flex items-center gap-2">
-              <MailIcon size={16} />
+            <a
+              href={`mailto:${motel.email}`}
+              className="flex w-fit items-center gap-2 hover:underline"
+            >
+              <MailIcon size={16} className="shrink-0" />
               <span>{motel.email}</span>
-            </div>
+            </a>
 
             <div className="flex items-center gap-2">
               <ClockIcon size={16} />
@@ -47,6 +60,8 @@ export const Footer = () => {
 
           <Button
             href={`https://wa.me/${motel.phone}`}
+            target="_blank"
+            rel="noopener noreferrer"
             leftIcon={<WhatsappLogoIcon size={20} />}
             label="Entre em contato"
             className="hidden sm:inline-flex"
@@ -62,8 +77,24 @@ export const Footer = () => {
           </p>
 
           <div className="flex items-center gap-2">
-            <InstagramLogoIcon size={20} />
-            <FacebookLogoIcon size={20} weight="fill" />
+            <a
+              href={motel.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram do Bland Motel"
+              className="transition-opacity hover:opacity-70"
+            >
+              <InstagramLogoIcon size={20} />
+            </a>
+            <a
+              href={motel.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook do Bland Motel"
+              className="transition-opacity hover:opacity-70"
+            >
+              <FacebookLogoIcon size={20} weight="fill" />
+            </a>
           </div>
         </div>
       </div>
