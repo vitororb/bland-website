@@ -11,7 +11,7 @@ export default function Suites() {
       <PageBanner
         img="/bg-lencol-vermelho.webp"
         firstLine="Escolha a sua"
-        title="SUÍTE IDEAL"
+        title="Suíte Ideal"
         subtitle="Privacidade, conforto e sofisticação. Descubra nossas suítes e reserve a sua experiência inesquecível."
       />
 
@@ -83,7 +83,7 @@ export default function Suites() {
           <table className="w-full">
             <thead>
               <tr className="bg-secondary text-white">
-                <th className="font-cinzel px-6 py-4 text-left">Suíte</th>
+                <th className="px-6 py-4 text-left">Suíte</th>
                 <th className="px-6 py-4 text-center">2 Horas</th>
                 <th className="px-6 py-4 text-center">Hora Adicional</th>
                 <th className="px-6 py-4 text-center">Pernoite</th>

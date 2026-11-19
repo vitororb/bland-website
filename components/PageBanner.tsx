@@ -36,7 +36,7 @@ export const PageBanner = ({
             </p>
           )}
 
-          <h1 className="font-family-cinzel text-5xl font-bold text-white md:text-6xl">
+          <h1 className="font-family-cinzel text-5xl font-bold text-white capitalize md:text-6xl">
             {title}
           </h1>
 

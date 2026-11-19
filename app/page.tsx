@@ -16,7 +16,7 @@ export default function Home() {
       <PageBanner
         img="/bg-lencol-vermelho.webp"
         firstLine="Bem-vindo ao"
-        title="BLAND MOTEL"
+        title="Bland Motel"
         subtitle="Reserve agora sua suíte e desfrute de conforto e privacidade"
       >
         <div className="flex flex-wrap items-center justify-center gap-4">

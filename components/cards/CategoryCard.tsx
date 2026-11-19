@@ -38,11 +38,11 @@ export const CategoryCard = ({
         <div className="flex flex-col">
           <h2 className="font-family-cinzel text-secondary text-3xl font-semibold">
             R${price}
-            <span className="font-family-montserrat text-muted text-sm font-normal text-neutral-600">
+            <span className="font-family-montserrat text-sm font-normal text-neutral-600">
               /2h
             </span>
           </h2>
-          <p className="font-family-montserrat text-muted text-xs text-neutral-600">
+          <p className="font-family-montserrat text-xs text-neutral-600">
             + R${additionalHour} por hora adicional
           </p>
         </div>
@@ -51,7 +51,7 @@ export const CategoryCard = ({
         <div className="flex flex-col">
           <h2 className="font-family-cinzel text-secondary/90 text-lg font-medium">
             R${overnight}
-            <span className="font-family-montserrat text-muted text-xs font-normal text-neutral-600">
+            <span className="font-family-montserrat text-xs font-normal text-neutral-600">
               {" "}
               Pernoite
             </span>
