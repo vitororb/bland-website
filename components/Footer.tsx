@@ -5,6 +5,7 @@ import {
   WhatsappLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { ClockIcon, MailIcon, MapPinIcon } from "lucide-react";
+import Image from "next/image";
 import { Button } from "./Button";
 
 export const Footer = () => {
@@ -12,9 +13,11 @@ export const Footer = () => {
     <footer className="bg-secondary w-screen text-white">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8">
         {/* Logo */}
-        <img
+        <Image
           src="/logos/logo-h-white.png"
-          alt="Logo"
+          alt="Bland Motel"
+          width={750}
+          height={172}
           className="hidden h-10 w-fit shrink-0 sm:inline-flex"
         />
 
