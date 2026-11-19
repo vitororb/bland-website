@@ -19,7 +19,7 @@ export const FeatureCard = ({
   const content = (
     <>
       {icon}
-      <h3 className="text-secondary font-cinzel mb-2 text-xl font-bold">
+      <h3 className="text-secondary font-family-cinzel mb-2 text-xl font-bold">
         {title}
       </h3>
       <p className="text-sm text-gray-600">{description}</p>
