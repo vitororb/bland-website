@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-vermelho.png"
+        img="/bg-lencol-vermelho.webp"
         firstLine="Bem-vindo ao"
         title="BLAND MOTEL"
         subtitle="Reserve agora sua suíte e desfrute de conforto e privacidade"

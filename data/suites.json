@@ -3,28 +3,28 @@
     "number": "01",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite01.jpg"],
+    "images": ["/suite-deluxe/suite01.webp"],
     "isTrending": false
   },
   {
     "number": "02",
     "type": "Luxo",
     "extras": [],
-    "images": ["/suite-deluxe/suite02.jpg"],
+    "images": ["/suite-deluxe/suite02.webp"],
     "isTrending": false
   },
   {
     "number": "03",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite03.jpg"],
+    "images": ["/suite-deluxe/suite03.webp"],
     "isTrending": false
   },
   {
     "number": "04",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite04.jpg"],
+    "images": ["/suite-deluxe/suite04.webp"],
     "isTrending": false
   },
   {
@@ -32,56 +32,56 @@
     "number": "05",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite05.jpg"],
+    "images": ["/suite-deluxe/suite05.webp"],
     "isTrending": false
   },
   {
     "number": "06",
     "type": "Master",
     "extras": ["Cadeira Erótica", "Pole Dance"],
-    "images": ["/suite-master/suite06.jpg"],
+    "images": ["/suite-master/suite06.webp"],
     "isTrending": false
   },
   {
     "number": "07",
     "type": "Master",
     "extras": ["Cadeira Erótica"],
-    "images": ["/suite-master/suite07.jpg"],
+    "images": ["/suite-master/suite07.webp"],
     "isTrending": false
   },
   {
     "number": "08",
     "type": "Premium",
     "extras": [],
-    "images": ["/suite-premium/suite08.jpeg"],
+    "images": ["/suite-premium/suite08.webp"],
     "isTrending": true
   },
   {
     "number": "09",
     "type": "Premium",
     "extras": ["Poltrona"],
-    "images": ["/suite-premium/suite09.jpeg"],
+    "images": ["/suite-premium/suite09.webp"],
     "isTrending": true
   },
   {
     "number": "10",
     "type": "Premium",
     "extras": [],
-    "images": ["/suite-premium/suite10.jpeg"],
+    "images": ["/suite-premium/suite10.webp"],
     "isTrending": true
   },
   {
     "number": "11",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite11.jpg"],
+    "images": ["/suite-deluxe/suite11.webp"],
     "isTrending": false
   },
   {
     "number": "12",
     "type": "Luxo",
     "extras": ["Poltrona"],
-    "images": ["/suite-deluxe/suite12.jpg"],
+    "images": ["/suite-deluxe/suite12.webp"],
     "isTrending": false
   }
 ]

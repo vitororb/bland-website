@@ -12,7 +12,7 @@ export default function Contato() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-vermelho.png"
+        img="/bg-lencol-vermelho.webp"
         firstLine="AINDA COM"
         title="Dúvidas?"
         subtitle="Entre em contato conosco! Nossa equipe está pronta para ajudar"

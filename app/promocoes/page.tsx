@@ -11,7 +11,7 @@ export default function Promocoes() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-vermelho.png"
+        img="/bg-lencol-vermelho.webp"
         firstLine="Acompanhe nossas"
         title="Novidades"
         subtitle="Aproveite nossas ofertas especiais e descontos exclusivos"
@@ -29,10 +29,22 @@ export default function Promocoes() {
         subtitle="Experiências inesquecíveis com condições especiais pensadas para você."
       >
         <div className="flex flex-wrap justify-center gap-8">
-          <PromotionCard img="/promotions/segunda.jpeg" />
-          <PromotionCard img="/promotions/quarta.jpeg" />
-          <PromotionCard img="/promotions/fidelidade.jpeg" />
-          <PromotionCard img="/promotions/aniversariante.jpeg" />
+          <PromotionCard
+            img="/promotions/segunda.webp"
+            alt="Segundas Intenções: às segundas-feiras, 10% de desconto nos produtos do sex shop"
+          />
+          <PromotionCard
+            img="/promotions/quarta.webp"
+            alt="Quarta Universitária: cerveja em dobro para estudantes às quartas-feiras, nas marcas Skol e Brahma"
+          />
+          <PromotionCard
+            img="/promotions/fidelidade.webp"
+            alt="Cartão Fidelidade: a cada 10 visitas, ganhe uma estadia"
+          />
+          <PromotionCard
+            img="/promotions/aniversariante.webp"
+            alt="Promoção do Aniversariante: 50% de desconto na estadia no seu aniversário, mediante documento oficial"
+          />
         </div>
       </Section>
 

@@ -9,7 +9,7 @@ export default function Suites() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-vermelho.png"
+        img="/bg-lencol-vermelho.webp"
         firstLine="Escolha a sua"
         title="SUÍTE IDEAL"
         subtitle="Privacidade, conforto e sofisticação. Descubra nossas suítes e reserve a sua experiência inesquecível."

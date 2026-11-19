@@ -10,7 +10,7 @@ export default function Sobre() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
+        img="/bg-lencol-branco.webp"
         title="Bland Motel"
         subtitle="Conheça nossa história e os valores que nos guiam"
       />

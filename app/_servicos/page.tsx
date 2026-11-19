@@ -64,7 +64,7 @@ export default function Servicos() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-branco.png"
+        img="/bg-lencol-branco.webp"
         title="Personalize Sua Experiência"
         subtitle="Solicite nossos serviços adicionais para tornar seu momento ainda mais especial"
       >
