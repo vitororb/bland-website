@@ -11,7 +11,7 @@ type Props = {
 
 export const SuiteCard = ({ imgUrl, suiteNumber, isTrending }: Props) => {
   return (
-    <div className="group relative flex h-96 w-72 shrink-0 flex-col overflow-hidden rounded-lg bg-neutral-800 shadow-md transition-shadow duration-500 hover:shadow-2xl">
+    <div className="group relative flex h-96 w-72 shrink-0 flex-col overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
       <Image
         src={imgUrl}
         alt={`Suíte ${suiteNumber}`}
