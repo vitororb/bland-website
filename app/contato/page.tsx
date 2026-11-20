@@ -12,7 +12,7 @@ export default function Contato() {
   return (
     <>
       <PageBanner
-        img="/bg-lencol-vermelho.png"
+        img="/bg-lencol-vermelho.webp"
         firstLine="AINDA COM"
         title="Dúvidas?"
         subtitle="Entre em contato conosco! Nossa equipe está pronta para ajudar"
@@ -31,6 +31,7 @@ export default function Contato() {
             icon={<Phone className="text-primary mx-auto mb-4 h-12 w-12" />}
             title="Telefone"
             description={motel.phoneFormatted}
+            href={`tel:+${motel.phone}`}
           />
           <FeatureCard
             icon={
@@ -38,11 +39,14 @@ export default function Contato() {
             }
             title="WhatsApp"
             description={motel.phoneFormatted}
+            href={`https://wa.me/${motel.phone}`}
+            external
           />
           <FeatureCard
             icon={<Mail className="text-primary mx-auto mb-4 h-12 w-12" />}
             title="Email"
             description={motel.email}
+            href={`mailto:${motel.email}`}
           />
           <FeatureCard
             icon={<Clock className="text-primary mx-auto mb-4 h-12 w-12" />}

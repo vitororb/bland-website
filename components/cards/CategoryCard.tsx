@@ -1,4 +1,5 @@
 import { ArrowRightIcon, Check, UtensilsIcon } from "lucide-react";
+import Image from "next/image";
 import { Button } from "../Button";
 
 type Props = {
@@ -19,21 +20,29 @@ export const CategoryCard = ({
   url,
 }: Props) => {
   return (
-    <div className="flex w-2xs flex-col rounded-2xl bg-[url('/bg-lencol-vermelho.png')] bg-cover bg-center shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <header className="font-family-cinzel flex h-20 w-full items-center justify-center text-2xl font-semibold text-white uppercase">
+    <div className="relative flex w-2xs flex-col overflow-hidden rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
+      <Image
+        src="/bg-lencol-vermelho.webp"
+        alt=""
+        fill
+        sizes="288px"
+        className="object-cover object-center"
+      />
+
+      <header className="font-family-cinzel relative flex h-20 w-full items-center justify-center text-2xl font-semibold text-white uppercase">
         {categoryName}
       </header>
 
-      <div className="flex h-full flex-col gap-4 rounded-2xl bg-white p-4">
+      <div className="relative flex h-full flex-col gap-4 rounded-2xl bg-white p-4">
         {/* Pricing */}
         <div className="flex flex-col">
           <h2 className="font-family-cinzel text-secondary text-3xl font-semibold">
             R${price}
-            <span className="font-family-montserrat text-muted text-sm font-normal text-neutral-600">
+            <span className="font-family-montserrat text-sm font-normal text-neutral-600">
               /2h
             </span>
           </h2>
-          <p className="font-family-montserrat text-muted text-xs text-neutral-600">
+          <p className="font-family-montserrat text-xs text-neutral-600">
             + R${additionalHour} por hora adicional
           </p>
         </div>
@@ -42,7 +51,7 @@ export const CategoryCard = ({
         <div className="flex flex-col">
           <h2 className="font-family-cinzel text-secondary/90 text-lg font-medium">
             R${overnight}
-            <span className="font-family-montserrat text-muted text-xs font-normal text-neutral-600">
+            <span className="font-family-montserrat text-xs font-normal text-neutral-600">
               {" "}
               Pernoite
             </span>

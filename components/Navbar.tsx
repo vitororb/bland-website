@@ -1,6 +1,7 @@
 "use client";
 
 import motel from "@/data/motel.json";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./Button";
@@ -26,9 +27,12 @@ export const Navbar = () => {
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="shrink-0 hover:cursor-pointer">
-          <img
+          <Image
             src="/logos/logo-h-white.png"
-            alt="Logo"
+            alt="Bland Motel"
+            width={750}
+            height={172}
+            preload
             className="h-6 w-auto"
           />
         </Link>
@@ -71,7 +75,7 @@ export const NavItem = ({ text, url }: NavItemProps) => {
   return (
     <Link
       href={url}
-      className={`font-montserrat text-sm font-medium transition-colors duration-200 hover:cursor-pointer ${
+      className={`text-sm font-medium transition-colors duration-200 hover:cursor-pointer ${
         isActive
           ? "border-b-2 border-white pb-1 text-white"
           : "text-white/80 hover:text-white"

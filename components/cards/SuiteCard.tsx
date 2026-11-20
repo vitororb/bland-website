@@ -1,5 +1,6 @@
 import motel from "@/data/motel.json";
 import { ArrowRight, Flame } from "lucide-react";
+import Image from "next/image";
 import { Button } from "../Button";
 
 type Props = {
@@ -10,11 +11,13 @@ type Props = {
 
 export const SuiteCard = ({ imgUrl, suiteNumber, isTrending }: Props) => {
   return (
-    <div className="group bg-muted relative flex h-96 w-72 shrink-0 flex-col overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
-      <img
+    <div className="group relative flex h-96 w-72 shrink-0 flex-col overflow-hidden rounded-lg shadow-md transition-shadow duration-500 hover:shadow-2xl">
+      <Image
         src={imgUrl}
         alt={`Suíte ${suiteNumber}`}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        fill
+        sizes="288px"
+        className="object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
       {isTrending && (
