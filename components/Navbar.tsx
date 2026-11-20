@@ -10,7 +10,7 @@ export const Navbar = () => {
   const navItems = [
     { id: "", label: "Início" },
     { id: "suites", label: "Suítes" },
-    // { id: "servicos", label: "Serviços" },
+    { id: "servicos", label: "Serviços" },
     { id: "promocoes", label: "Promoções" },
     // { id: "sobre", label: "Sobre" },
     { id: "contato", label: "Contato" },
@@ -54,6 +54,9 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu*/}
+      {/* TODO: com a aba "Serviços" os itens ultrapassam a largura da tela no mobile.
+          Implementar scroll horizontal (provável causa: o `items-center` da <nav>
+          centraliza o menu e corta o início, impedindo a rolagem até o primeiro item). */}
       <div className="flex items-center gap-8 overflow-x-auto p-4 sm:hidden">
         {navItems.map((item) => (
           <NavItem key={item.id} url={`/${item.id}`} text={item.label} />
