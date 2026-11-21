@@ -7,7 +7,7 @@ type Props = {
 
 export const PromotionCard = ({ img, alt }: Props) => {
   return (
-    <div className="relative h-96 w-64 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className="relative h-96 min-w-64 overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
       <Image
         src={img}
         alt={alt}
