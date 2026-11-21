@@ -10,7 +10,7 @@ import { Button } from "./Button";
 
 export const Footer = () => {
   return (
-    <footer className="bg-secondary w-screen text-white">
+    <footer className="bg-secondary w-full text-white">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-8">
         {/* Logo */}
         <Image

@@ -61,7 +61,8 @@ export default function Contato() {
       <Section title="Mapa de Localização">
         <div className="h-96 overflow-hidden rounded-lg shadow-lg">
           <iframe
-            title="localização"
+            title="Mapa de localização do Bland Motel"
+            loading="lazy"
             width="100%"
             height="100%"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.123!2d-52.5261843!3d-17.5810575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93632606d5dd8547%3A0xb17273c4daad57ae!2sBland%20Motel%20-%20Mineiros!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr"
