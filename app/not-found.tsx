@@ -1,5 +1,10 @@
 import { Button } from "@/components/Button";
 import { ArrowRightIcon } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Página não encontrada",
+};
 
 export default function NotFound() {
   return (
