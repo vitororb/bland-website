@@ -1,4 +1,5 @@
 import { Footer } from "@/components/Footer";
+import { LocalBusinessJsonLd } from "@/components/LocalBusinessJsonLd";
 import { Navbar } from "@/components/Navbar";
 import { openGraphBase, SITE_NAME, SITE_URL } from "@/lib/metadata";
 import { Analytics } from "@vercel/analytics/react";
@@ -49,6 +50,7 @@ export default function RootLayout({
           <Footer />
         </main>
         <Analytics />
+        <LocalBusinessJsonLd />
       </body>
     </html>
   );
