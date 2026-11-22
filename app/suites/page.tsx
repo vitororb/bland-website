@@ -4,6 +4,14 @@ import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
 import categories from "@/data/categories.json";
 import suites from "@/data/suites.json";
+import { pageMetadata } from "@/lib/metadata";
+
+export const metadata = pageMetadata({
+  title: "Suítes e Preços",
+  description:
+    "Conheça as suítes Luxo, Premium e Master do Bland Motel: fotos, comodidades e tabela de preços.",
+  path: "/suites",
+});
 
 export default function Suites() {
   return (

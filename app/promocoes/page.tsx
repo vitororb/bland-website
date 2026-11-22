@@ -5,7 +5,15 @@ import { Divisor } from "@/components/Divisor";
 import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
 import motel from "@/data/motel.json";
+import { pageMetadata } from "@/lib/metadata";
 import { Gift, Sparkles } from "lucide-react";
+
+export const metadata = pageMetadata({
+  title: "Promoções",
+  description:
+    "Promoções e descontos exclusivos do Bland Motel. Confira as ofertas especiais e reserve pelo WhatsApp.",
+  path: "/promocoes",
+});
 
 export default function Promocoes() {
   return (

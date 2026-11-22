@@ -6,7 +6,15 @@ import { PageBanner } from "@/components/PageBanner";
 import { Section } from "@/components/Section";
 import faqs from "@/data/faqs.json";
 import motel from "@/data/motel.json";
+import { pageMetadata } from "@/lib/metadata";
 import { Clock, Mail, MessageCircle, Phone } from "lucide-react";
+
+export const metadata = pageMetadata({
+  title: "Contato e Localização",
+  description:
+    "Fale conosco pelo WhatsApp, telefone ou e-mail. Veja o mapa, as perguntas frequentes e reserve.",
+  path: "/contato",
+});
 
 export default function Contato() {
   return (
