@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 z-50 flex w-screen flex-col items-center bg-black/10 backdrop-blur-xs"
+      className="fixed top-0 z-50 flex w-full flex-col items-center bg-black/10 backdrop-blur-xs"
       style={{
         background:
           "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent)",

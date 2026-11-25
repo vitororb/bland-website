@@ -28,7 +28,7 @@ export default function Promocoes() {
         title="Promoções Imperdíveis"
         subtitle="Experiências inesquecíveis com condições especiais pensadas para você."
       >
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex w-full gap-4 overflow-x-auto p-4 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:p-4">
           <PromotionCard
             img="/promotions/segunda.webp"
             alt="Segundas Intenções: às segundas-feiras, 10% de desconto nos produtos do sex shop"
@@ -44,6 +44,14 @@ export default function Promocoes() {
           <PromotionCard
             img="/promotions/aniversariante.webp"
             alt="Promoção do Aniversariante: 50% de desconto na estadia no seu aniversário, mediante documento oficial"
+          />
+          <PromotionCard
+            img="/promotions/rapidinha.webp"
+            alt="Promoção Rapidinha: Suíte Luxo por R$ 90 pelo período de até 1 hora"
+          />
+          <PromotionCard
+            img="/promotions/tarifa-promocional.webp"
+            alt="Tarifa Promocional: até 2 horas por R$ 100 na Suíte Luxo, R$ 125 na Premium e R$ 145 na Master, com entrada das 6h às 12h de segunda a sábado e das 6h às 18h aos domingos"
           />
         </div>
       </Section>

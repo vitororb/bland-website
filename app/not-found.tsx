@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 px-6 text-center">
+    <div className="flex min-h-svh flex-col items-center justify-center gap-4 px-6 text-center">
       <h1 className="font-family-cinzel text-foreground text-9xl font-bold">
         404
       </h1>
