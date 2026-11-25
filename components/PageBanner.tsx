@@ -17,7 +17,7 @@ export const PageBanner = ({
   children,
 }: Props) => {
   return (
-    <section className="relative flex h-screen items-center overflow-hidden">
+    <section className="relative flex min-h-svh items-center overflow-hidden">
       <Image
         src={img}
         alt=""

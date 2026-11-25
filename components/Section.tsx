@@ -9,7 +9,7 @@ export const Section = ({ id, title, subtitle, children }: Props) => {
   return (
     <div
       id={id}
-      className="mx-auto my-12 flex w-full max-w-7xl flex-col items-center gap-8 px-6"
+      className="mx-auto my-12 flex w-full max-w-7xl scroll-mt-36 flex-col items-center gap-8 px-6"
     >
       <div className="flex max-w-3xl flex-col gap-8 text-center">
         {title && (

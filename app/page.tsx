@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/Button";
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";

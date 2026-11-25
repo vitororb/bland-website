@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${cinzel.variable} ${montserrat.variable} antialiased`}>
-        <main className="flex w-screen flex-col">
+        <main className="flex w-full flex-col">
           <Navbar />
           {children}
           <Footer />
